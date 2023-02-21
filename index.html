@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Beknur | | Paint</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="icon" href="https://play-lh.googleusercontent.com/iUEbPy7ItW8sLX2cBXytD0x2p5fdIJgdOWbmwMIiz0XVcFV9D1a34Hxwi1ckS1QGPAQ" type="image/gif" sizes="16x16">
+		<script src="js/script.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<section class="drawing-board">
+				<canvas></canvas>
+			</section>
+			<section class="tools-board">
+				<div class="row">
+					<label class="title">ПІШІМДЕР</label>
+					<ul class="options">
+						<li class="option tool" id="rectangle">
+							<img src="icons/rectangle.svg" alt="rectangle" />
+							<span>Тіктөртбұрыш</span>
+						</li>
+						<li class="option tool" id="circle">
+							<img src="icons/circle.svg" alt="circle" />
+							<span>Шеңбер</span>
+						</li>
+						<li class="option tool" id="triangle">
+							<img src="icons/triangle.svg" alt="triangle" />
+							<span>Үшбұрыш</span>
+						</li>
+						<li class="option">
+							<input type="checkbox" id="fill-color" />
+							<label for="fill-color">Түсті толтыру</label>
+						</li>
+					</ul>
+				</div>
+				<div class="row">
+					<label class="title">ОПЦИЯЛАР</label>
+					<ul class="options">
+						<li class="option tool active" id="brush">
+							<img src="icons/brush.svg" alt="brush" />
+							<span>Щетка</span>
+						</li>
+						<li class="option tool" id="eraser">
+							<img src="icons/eraser.svg" alt="eraser" />
+							<span>Өшіргіш</span>
+						</li>
+						<li class="option">
+							<input type="range" id="size-slider" min="1" max="30" value="5" />
+						</li>
+					</ul>
+				</div>
+				<div class="row colors">
+					<label class="title">ТҮСТЕР</label>
+					<ul class="options">
+						<li class="option"></li>
+						<li class="option selected"></li>
+						<li class="option"></li>
+						<li class="option"></li>
+						<li class="option">
+							<input type="color" id="color-picker" value="#4a98f7" />
+						</li>
+					</ul>
+				</div>
+				<div class="row buttons">
+					<button class="clear-canvas">Өшіру</button>
+					<button class="save-img">Сақтау</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
